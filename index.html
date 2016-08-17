@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jquery.rss example</title>
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+  <script src="js/jquery.rss.js"></script>
+  <script>
+    jQuery(function($) {
+      $("#rss-feeds").rss("https://curiosity.com/feeds/dailymemes.atom",
+      {
+        entryTemplate:'<div class="col-md-12 data-title">{title}</div><div class="col-md-12 data-image">{teaserImage}</div>'
+      })
+    })
+  </script>
+
+  <link href="css\bootstrap.css" rel="stylesheet" />
+  <link href="css\Custom.css" rel="stylesheet" />
+          
+
+</head>
+
+<body>
+
+
+  <div id="rss-feeds"></div>
+
+  
+</body>
+<script src="js\bootstrap.min.js"></script>
+</html>

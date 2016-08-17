@@ -1,0 +1,8 @@
+.data-title{
+font-size:24px;
+}
+
+.data-image > img{
+    height:250px;
+    width:250px;
+}
